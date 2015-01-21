@@ -6,3 +6,20 @@ snippet ce
 
 snippet ci
 	console.info(${1:stuff});
+
+# Prototype
+snippet proto
+	${1:class_name}.prototype.${2:method_name} =
+	function (${3:first_argument}) {
+		${4:// body...}
+	};
+# Function
+# Anonymous Function
+snippet f
+	function (${1}) {${2}};
+
+# Function
+snippet fun
+	function ${1:function_name}(${2:argument}) {
+		${3:// body...}
+	}
