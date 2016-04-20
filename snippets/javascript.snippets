@@ -94,19 +94,26 @@ snippet gett
 	getElementBy${1:Id}('${2}')${3}
 
 snippet defc
-	define('${1:`Dirname('', 'ClassName')`}/Controller', [
+	define('classes/${1:`Dirname('', 'ClassName')`}/Controller', [
 		'${2:abstracts/Controller}'
 	], function (Controller) {
 		return Controller.extend({
+			initialize: function (view) {
+				this.view = view;
+
+				this.parent();
+			}
 			${3}
 		});
 	});
 
 snippet defv
-	define('${1:`Dirname('', 'ClassName')`}/View', [
+	define('classes/${1:`Dirname('', 'ClassName')`}/View', [
 		'${2:abstracts/View}'
 	], function (View) {
 		return View.extend({
+			domEvents: {
+			},
 			${3}
 		});
 	});
