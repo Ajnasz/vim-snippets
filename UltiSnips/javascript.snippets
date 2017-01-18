@@ -1,8 +1,6 @@
 global !p
 import os
 
-def getModuleName(snip):
-	snip.rv = os.path.basename(os.path.dirname(os.path.abspath(path))) if path else 'ModuleName'
 endglobal
 
 snippet cl "cl"
@@ -120,7 +118,7 @@ endsnippet
 
 
 snippet defc
-define('classes/${1:`!p getModuleName(snip)`}/Controller', [
+define('classes/${1:`!p getModuleNameFromSnip(snip, path)`}/Controller', [
 	'${2:abstracts/Controller}'
 ], function (Controller) {
 	return Controller.extend({
@@ -135,7 +133,7 @@ define('classes/${1:`!p getModuleName(snip)`}/Controller', [
 endsnippet
 
 snippet defv
-define('classes/${0:`!p getModuleName(snip)`}/View', [
+define('classes/${0:`!p getModuleNameFromSnip(snip, path)`}/View', [
 	'${1:abstracts/View}'
 ], function (View) {
 	return View.extend({

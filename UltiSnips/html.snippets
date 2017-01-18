@@ -1,9 +1,5 @@
 global !p
-import re
-import os
-
-def getTitle(snip):
-	snip.rv = ' '.join(filter(lambda f: f!='', re.sub(r'([^a-z]+)', r'_\1', os.path.splitext(snip.basename)[0]).split('_'))).title()
+from snippet_helpers.py import getTitleFromSnip
 endglobal
 
 snippet nbs "nbs"
@@ -553,7 +549,7 @@ snippet head "head"
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-	<title>${1:`!p getTitle(snip)`}</title>
+	<title>${1:`!p getTitleFromSnip(snip)`}</title>
 	${0}
 </head>
 endsnippet
@@ -604,7 +600,7 @@ snippet html5 "html5"
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>${1:`!p getTitle(snip)`}</title>
+		<title>${1:`!p getTitleFromSnip(snip)`}</title>
 		</head>
 	<body>
 		${0:body}
@@ -617,7 +613,7 @@ snippet html5l "html5l"
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>${1:`!p getTitle(snip)`}</title>
+		<title>${1:`!p getTitleFromSnip(snip)`}</title>
 	</head>
 	<body>
 		${0:body}
@@ -1112,7 +1108,7 @@ snippet time "time"
 <time datetime="${1}" pubdate="${2:$1}">${0:$1}</time>
 endsnippet
 snippet title "title"
-<title>${1:`!p getTitle(snip)`}</title>
+<title>${1:`!p getTitleFromSnip(snip)`}</title>
 endsnippet
 snippet tr "tr"
 <tr>
