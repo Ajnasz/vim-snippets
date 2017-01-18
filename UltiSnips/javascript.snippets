@@ -1,6 +1,5 @@
 global !p
-import os
-
+from snippet_helpers import getModuleNameFromPath
 endglobal
 
 snippet cl "cl"
@@ -118,7 +117,7 @@ endsnippet
 
 
 snippet defc
-define('classes/${1:`!p getModuleNameFromSnip(snip, path)`}/Controller', [
+define('classes/${1:`!p getModuleNameFromPath(snip, path)`}/Controller', [
 	'${2:abstracts/Controller}'
 ], function (Controller) {
 	return Controller.extend({
@@ -133,7 +132,7 @@ define('classes/${1:`!p getModuleNameFromSnip(snip, path)`}/Controller', [
 endsnippet
 
 snippet defv
-define('classes/${0:`!p getModuleNameFromSnip(snip, path)`}/View', [
+define('classes/${0:`!p getModuleNameFromPath(snip, path)`}/View', [
 	'${1:abstracts/View}'
 ], function (View) {
 	return View.extend({
