@@ -1,0 +1,39 @@
+{
+  "name": "ajnasz-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact"
+        ],
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": [
+          "lua"
+        ],
+        "path": "./snippets/lua.json"
+      },
+	  {
+        "language": [
+          "fennel"
+        ],
+        "path": "./snippets/fennel.json"
+      },
+      {
+        "language": [
+          "typescript",
+          "typescriptreact"
+        ],
+        "path": "./snippets/typescript.json"
+      }
+    ]
+  }
+}
+
