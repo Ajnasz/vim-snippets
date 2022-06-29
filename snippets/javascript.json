@@ -694,5 +694,11 @@
     "prefix": "error",
     "body": ["console.error($1);", "$0"],
     "description": "Log error to the console"
+  },
+
+  "Console log debug line": {
+	  "prefix": "cld",
+	  "body": ["console.log('---------------------------------------- ${1:description}', ${2});", "$0"],
+	  "description": "Console log debug line"
   }
 }
