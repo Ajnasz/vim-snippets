@@ -1,0 +1,42 @@
+{
+	"add a html5 page": {
+		"prefix": "page5",
+		"body": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>${1}</title>\n\t</head>\n\t<body>\n\t\t${2}\n\t</body>\n</html>"
+	},
+	"add a html tag": {
+		"prefix": "html",
+		"body": "<html>\n\t${0}\n</html>"
+	},
+	"add a head tag": {
+		"prefix": "head",
+		"body": "<head>\n\t${0}\n</head>\n"
+	},
+	"add a title tag": {
+		"prefix": "title",
+		"body": "<title>${0}</title>\n"
+	},
+	"add a body tag": {
+		"prefix": "body",
+		"body": "<body>\n${0}\n</body>"
+	},
+	"add a script tag": {
+		"prefix": "script",
+		"body": "<script>${0}</script>"
+	},
+	"add a strong tag": {
+		"prefix": "strong",
+		"body": "<strong>${0}</strong>"
+	},
+	"add a ul tag": {
+		"prefix": "ul",
+		"body": "<ul>\n<li>${0}</li>\n</ul>\n"
+	},
+	"add a ol tag": {
+		"prefix": "ol",
+		"body": "<ol>\n<li>${0}</li>\n</ol>\n"
+	},
+	"add an a tag": {
+		"prefix": "a",
+		"body": "<a href=\"${1}\">${2:${1}}</a>"
+	}
+}
