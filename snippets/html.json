@@ -1,7 +1,7 @@
 {
 	"add a html5 page": {
 		"prefix": "page5",
-		"body": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>${1}</title>\n\t</head>\n\t<body>\n\t\t${2}\n\t</body>\n</html>"
+		"body": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>${1}</title>\n\t</head>\n\t<body>\n\t\t${2}\n\t</body>\n</html>"
 	},
 	"add a html tag": {
 		"prefix": "html",
@@ -19,6 +19,26 @@
 		"prefix": "body",
 		"body": "<body>\n${0}\n</body>"
 	},
+	"add a style tag": {
+		"prefix": "style",
+		"body": "<style>${0}</style>"
+	},
+  "add a link tag": {
+    "prefix": "link",
+    "body": "<link rel=\"${1:stylesheet}\" href=\"${2}\">"
+  },
+  "add a favicon ": {
+    "prefix": "favicon",
+    "body": "<link rel=\"shortcut icon\" href=\"${1}\" type=\"image/png\">"
+  },
+  "add a meta charset": {
+    "prefix": "charset",
+    "body": "<meta charset=\"utf-8\">"
+  },
+  "add a meta tag": {
+    "prefix": "meta",
+    "body": "<meta name=\"${1}\" content=\"${2}\">"
+  },
 	"add a script tag": {
 		"prefix": "script",
 		"body": "<script>${0}</script>"
@@ -26,6 +46,10 @@
 	"add a strong tag": {
 		"prefix": "strong",
 		"body": "<strong>${0}</strong>"
+	},
+	"add a main tag": {
+		"prefix": "main",
+		"body": "<main>${0}</main>"
 	},
 	"add a ul tag": {
 		"prefix": "ul",
@@ -35,9 +59,17 @@
 		"prefix": "ol",
 		"body": "<ol>\n<li>${0}</li>\n</ol>\n"
 	},
+	"add an li tag": {
+		"prefix": "li",
+		"body": "<li>${0}</li>\n"
+	},
 	"add an a tag": {
 		"prefix": "a",
 		"body": "<a href=\"${1}\">${2:${1}}</a>"
+	},
+	"add a form tag": {
+		"prefix": "form",
+		"body": "<form>${0}</form>"
 	},
 	"add a textarea tag": {
 		"prefix": "textarea",
@@ -55,8 +87,52 @@
 		"prefix": "label",
 		"body": "<label for=\"${1:text}\">${2}</label>"
 	},
+	"add an header tag": {
+		"prefix": "header",
+		"body": "<header>${0}</header>"
+	},
+	"add an h1 tag": {
+		"prefix": "h1",
+		"body": "<h1>${0}</h1>"
+	},
+	"add an h2 tag": {
+		"prefix": "h2",
+		"body": "<h2>${0}</h2>"
+	},
+	"add an h3 tag": {
+		"prefix": "h3",
+		"body": "<h3>${0}</h3>"
+	},
+	"add an h4 tag": {
+		"prefix": "h4",
+		"body": "<h4>${0}</h4>"
+	},
+	"add an h5 tag": {
+		"prefix": "h5",
+		"body": "<h5>${0}</h5>"
+	},
+	"add an h6 tag": {
+		"prefix": "h6",
+		"body": "<h6>${0}</h6>"
+	},
+	"add an span tag": {
+		"prefix": "span",
+		"body": "<span>${0}</span>"
+	},
+	"add an div tag": {
+		"prefix": "div",
+		"body": "<div>${0}</div>"
+	},
+	"add an article tag": {
+		"prefix": "article",
+		"body": "<article>${0}</article>"
+	},
+	"add an time tag": {
+		"prefix": "time",
+		"body": "<time>${0}</time>"
+	},
 	"add a p tag": {
 		"prefix": "p",
-		"body": "<p></p>"
+		"body": "<p>${0}</p>"
 	}
 }
