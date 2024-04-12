@@ -17,8 +17,12 @@
    (s :cw [(t "console.warn(") (i 0) (t ");")])
    (s :cld [ (t (.. "console.log('" (repeat 20 "-") "', '")) (i 0 "message") (t "');") ])
    (s :a [ (t "await ") (i 0) ])
+   (s :as [ (t "async ") (i 0) ])
+
    (s :f [ (t "function ") (i 1) (t " (") (i 2) (t [") {" ""]) (i 0) (t ["" "}"]) ])
    (s :fa [ (t "(") (i 1) (t ") => ") (i 0) ])
+   (s :fap [ (t "(") (i 1) (t ") => {") (i 0) (t ["" "}"]) ])
+   (s :afa [ (t "async (") (i 1) (t ") => ") (i 0) ])
    (s :const [ (t "const ") (i 1) (t " = ") (i 2) (t ";") ])
    (s :let [ (t "let ") (i 1) (t " = ") (i 2) (t ";") ])
    (s :if [ (t "if (") (i 1) (t ") {") (i 0) (t "\n") (t "}") ])

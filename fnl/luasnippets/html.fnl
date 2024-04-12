@@ -30,6 +30,8 @@
         (s :ul [ (t "<ul>") (i 0) (t "</ul>") ])
         (s :ol [ (t "<ol>") (i 0) (t "</ol>") ])
         (s :li [ (t "<li>") (i 0) (t "</li>") ])
+        (s :code [ (t "<code>") (i 0) (t "</code>") ])
+        (s :pre [ (t "<pre>") (i 0) (t "</pre>") ])
         (s :table [ (t "<table>") (i 0) (t "</table>") ])
         (s :tr [ (t "<tr>") (i 0) (t "</tr>") ])
         (s :td [ (t "<td>") (i 0) (t "</td>") ])
