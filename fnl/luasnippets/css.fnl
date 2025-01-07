@@ -67,6 +67,7 @@
    (s :ws [(t "word-spacing: ") (i 1) (t ";")])
    (s :whs [(t "white-space: ") (i 1) (t ";")])
    (s :lh [(t "line-height: ") (i 1) (t ";")])
-   (s :va [(t "vertical-align: ") (i 1) (t   (s :fd [(t "flex-direction: ") (i 1) (t ";")]))])
+   (s :va [(t "vertical-align: ") (i 1) (t ";")])
+   (s :fd [(t "flex-direction: ") (i 1) (t ";")])
    ]
   )
